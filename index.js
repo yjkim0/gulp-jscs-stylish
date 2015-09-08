@@ -8,9 +8,9 @@ function byErrorLine (a, b) {
 function tapJscs (action) {
 	return function () {
 		return tap(function (file) {
-			if (!file.jscs || file.jscs.success) {
-				return;
-			}
+			// if (!file.jscs || file.jscs.success) {
+			// 	return;
+			// }
 			action(file);
 		});
 	};
